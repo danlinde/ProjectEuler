@@ -10,3 +10,4 @@ even_fib = fib.select { |i| i.even?}
 
 puts even_fib.inject(:+)
 
+

@@ -1,7 +1,7 @@
-require "./projeul_3and5.rb"
+require "./problem_1"
 
 describe Multiples do
-	let(:multiple)	{Multiples.new}
+	let(:multiple)	{ Multiples.new }
 
 	it 'is divisible by three' do
 		expect(multiple.is_div_by_three(3)).to be_true

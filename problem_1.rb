@@ -26,13 +26,6 @@ class Multiples
 	end
 end
 
-test = Multiples.new
-0.upto(999)	{ |number| test.list(number) }
-
-# puts test.new_list.inspect
-
-puts test.sum
-
 
 
 		

@@ -1,14 +1,17 @@
+# http://projecteuler.net/problem=3
+
 require 'prime'
 
-prime_factors = []
+class PrimeFactors
+  def prime_factors(number)
+    array = []
 
-1.upto(13195) do |i|
-	if 13195 % i == 0 &&
-		i.prime? == true
-		prime_factors << i
-	end
+    1.upto(number) do |i|
+    	if number % i == 0 &&
+    		i.prime? == true
+    		array << i
+    	end
+    end
+    array.last
+  end
 end
-
-puts prime_factors.last
-
-puts Prime.prime_division(600851475143).last[0]
